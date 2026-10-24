@@ -1,0 +1,7 @@
+claim_id,security_id,made_at,item_kind,item_ref,check_kind,target,comparator,threshold,resolves_at,probability,outcome,resolved_at,brier
+syn-claim-001,SYN:NWGC,2026-06-30,driver,utility grid-hardening capex,filing_field,RevenueFromContractWithCustomerExcludingAssessedTax,direction_up,,2027-02-28,0.70,,,
+syn-claim-002,SYN:NWGC,2026-06-30,scenario,base,filing_field,GrossProfit,>=,0.27,2027-02-28,0.55,,,
+syn-claim-003,SYN:NWGC,2026-06-30,driver,second plant line commissioned,transcript_statement,"commission(ed|ing).{0,40}(second|new) line",exists,,2026-12-31,0.80,,,
+syn-claim-004,SYN:NWGC,2026-03-31,driver,steel supply disruption,event,tariff or allocation notice on electrical steel,exists,,2026-09-30,0.25,no,2026-09-30,0.0625
+syn-claim-005,SYN:HLCP,2026-03-31,scenario,bear,macro_series,SYN_COLD_STORAGE_VACANCY,>,8.0,2026-09-30,0.30,yes,2026-09-30,0.49
+syn-claim-006,SYN:VRSL,2026-03-31,driver,reimbursement decision,event,coverage determination published,exists,,2026-09-30,0.60,yes,2026-09-30,0.16

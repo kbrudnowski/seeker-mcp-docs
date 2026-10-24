@@ -1,0 +1,36 @@
+{
+  "_synthetic": true,
+  "_note": "Invented companies. Any resemblance to a listed issuer is accidental.",
+  "securities": [
+    {
+      "security_id": "SYN:NWGC",
+      "ticker": "NWGC",
+      "name": "Northwind Grid Components Inc.",
+      "exchange": "SYN",
+      "cik": "0009990001",
+      "sector": "Industrials",
+      "industry": "Electrical Equipment",
+      "aliases": ["Northwind Grid", "NGC"]
+    },
+    {
+      "security_id": "SYN:HLCP",
+      "ticker": "HLCP",
+      "name": "Halcyon Cold Chain Partners",
+      "exchange": "SYN",
+      "cik": "0009990002",
+      "sector": "Industrials",
+      "industry": "Logistics",
+      "aliases": ["Halcyon Cold Chain"]
+    },
+    {
+      "security_id": "SYN:VRSL",
+      "ticker": "VRSL",
+      "name": "Verisol Diagnostics Ltd.",
+      "exchange": "SYN",
+      "cik": "0009990003",
+      "sector": "Health Care",
+      "industry": "Diagnostics",
+      "aliases": ["Verisol"]
+    }
+  ]
+}

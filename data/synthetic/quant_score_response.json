@@ -1,0 +1,47 @@
+{
+  "_synthetic": true,
+  "_note": "Shape of POST /v1/score. Scores and percentiles are invented. The third row shows how a name with partial coverage comes back: never a 4xx.",
+  "request": {
+    "as_of": "2026-06-30T00:00:00Z",
+    "security_ids": ["SYN:NWGC", "SYN:HLCP", "SYN:VRSL"]
+  },
+  "response": [
+    {
+      "security_id": "SYN:NWGC",
+      "as_of": "2026-06-30T00:00:00Z",
+      "model_version": "factor-composite-v1",
+      "features_version": "feat-2026.10.1",
+      "percentile": 0.81,
+      "scores": {"composite": 0.62},
+      "forecast": {},
+      "uncertainty": {"coverage_ok": true},
+      "flags": [],
+      "inputs_as_of": {"prices_through": "2026-06-30", "facts_through": "2026-05-08", "membership_through": "2026-06-30"}
+    },
+    {
+      "security_id": "SYN:HLCP",
+      "as_of": "2026-06-30T00:00:00Z",
+      "model_version": "factor-composite-v1",
+      "features_version": "feat-2026.10.1",
+      "percentile": 0.34,
+      "scores": {"composite": -0.21},
+      "forecast": {},
+      "uncertainty": {"coverage_ok": true},
+      "flags": ["illiquid"],
+      "inputs_as_of": {"prices_through": "2026-06-30", "facts_through": "2026-05-12", "membership_through": "2026-06-30"}
+    },
+    {
+      "security_id": "SYN:VRSL",
+      "as_of": "2026-06-30T00:00:00Z",
+      "model_version": "factor-composite-v1",
+      "features_version": "feat-2026.10.1",
+      "percentile": 0.0,
+      "scores": {},
+      "forecast": {},
+      "uncertainty": {"coverage_ok": false, "dilution_12m_computable": false},
+      "flags": ["coverage_partial", "stale_fundamentals"],
+      "reason": "no filing with a balance sheet on or before 2026-06-30; value and quality factors cannot be built",
+      "inputs_as_of": {"prices_through": "2026-06-30", "facts_through": "2025-09-30", "membership_through": "2026-06-30"}
+    }
+  ]
+}
